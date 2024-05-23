@@ -35,22 +35,24 @@ else{
 // // console.log(findMax(2, 5, 7));
 // console.log('This is maxmam number is:', findMax(10, 20, 40));
 
-// NavigationPreloadManager
-function findMax(noun1, noun2, noun3){
-    let max;
-    if(noun1 > noun2 && noun1 > noun3){
-        max = noun1;
+
+function findMin(num1, num2, num3, num4){
+    let min;
+    if(num1 < num2 && num1 < num3 && num1 < num4){
+        min = num1;
     }
-    else if(noun2 > noun1 && noun2 > noun3){
-        max = noun2;
+    else if(num2 < num1 && num2 < num3 && num2 < num4){
+        min = num2;
+    }
+    else if(num3 < num1 && num3 < num2 && num3 < num4){
+        min = num3;
     }
     else{
-        max = noun3;
+        min = num4;
     }
-    return max;
+    return min;
 }
-findMax(34, 56, 23);
-console.log('This is maxmam noun is:');
+console.log('This is minimam number is:', findMin(33, 54, 12, 89));
 
 // ------------
 
