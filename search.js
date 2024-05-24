@@ -20,3 +20,8 @@ else{
 // startsWith 
 
 console.log(lyrics.startsWith('sada'));
+
+// endsWith
+const filName = 'mybioata.psf';
+const otherFile = 'mypic.png';
+filName.endsWith('.pdf');
